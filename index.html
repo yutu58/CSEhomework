@@ -2,39 +2,8 @@
 <html>
 <head>
 <title>Homework CSE1</title>
-<style>
-.menu {
-      visibility: hidden;
-      z-index: 100;
-      position: absolute;
-      height: 30%;
-      width: 50%;
-      text-align: center;
-      margin-left: 25%;
-      background-color: #EEEEEE;
-      border-radius: 12px;
-      margin-top: 5%
-}
-
-.button {
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-  	width: 20%;
-    border-radius: 40px;
-    height: 5%;
-}
-
-#buttons {
-	margin-top: 20%;
-}
-
-body {
-  background-image: url("https://my.tudelft.nl/assets/img/osiris-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
+<link rel="stylesheet" href="stylesheet.css">
+<script src="main.js"></script>
 </head>
 <body>
 <div id="buttons">
@@ -60,21 +29,3 @@ body {
 </div>
 </body>
 </html>
-<script>
-var courses = ["mentorate", "OOP", "RL", "CO"]
-function view(a){
-let x = courses.indexOf(a)
-for (var i = 0; i<4; i++){
-	if (i !== x) {  	
-        console.log(courses[i])
-        document.getElementById(courses[i]).style.visibility = "hidden"
-	}
-}
-  if (document.getElementById(a).style.visibility == "visible") {
-    document.getElementById(a).style.visibility = "hidden"
-  } else {
-    document.getElementById(a).style.visibility = "visible"
-  }
-
-}
-</script>
