@@ -37,7 +37,6 @@ function newmeme(){
       let y = JSON.parse(x);
       var img = document.createElement("img");
       img.src = y['url']
-      img.width = 400
       img.height = 400
       var src = document.getElementById("meme")
       src.appendChild(img)
