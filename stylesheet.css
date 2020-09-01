@@ -11,6 +11,18 @@
       margin-top: 5%
 }
 
+#meme {
+	 visibility: hidden;
+      z-index: 100;
+      position: absolute;
+      height: 30%;
+      width: 60%;
+      text-align: center;
+      margin-left: 20%;
+      border-radius: 20px;
+      margin-top: 5%
+}
+
 .button {
 	display: block;
   	margin-left: auto;
@@ -21,8 +33,10 @@
 }
 
 #buttons {
-	margin-top: 5%;
+	margin-top: 10%;
 }
+
+
 
 body {
   background-image: url("https://my.tudelft.nl/assets/img/osiris-background.png");
